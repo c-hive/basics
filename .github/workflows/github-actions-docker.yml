@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - name: test
+      run: |
+        pwd
+        ls
+        ls github-actions-docker
     - name: Hello world action step
       id: hello
       uses: ./github-actions-docker
