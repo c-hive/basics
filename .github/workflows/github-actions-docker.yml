@@ -5,13 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-
-    - name: test
-      run: |
-        pwd
-        ls
-        ls github-actions-docker
-
-    - name: Hello world action step
-      id: hello
-      uses: ./github-actions-docker
+    - uses: ./github-actions-docker
