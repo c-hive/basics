@@ -1,6 +1,6 @@
 # Basics
 
-#### Tutorial-like, simple projects for showcasing tech & features
+#### Simple projects for showcasing tech & features
 
 Each project
 - is standalone
