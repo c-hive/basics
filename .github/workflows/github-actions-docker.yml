@@ -1,3 +1,5 @@
+name: GitHub Action with Docker
+
 on: [push]
 
 jobs:
