@@ -10,3 +10,4 @@ Each project
 ### Projects
 
 - [GitHub Action with Docker](github-actions-docker)
+- [GitHub Action with Native JS](github-actions-js)
