@@ -15,5 +15,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: thisismydesign/basics/github-actions-js
+    - uses: c-hive/basics/github-actions-js
 ```
