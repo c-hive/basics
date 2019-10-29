@@ -21,7 +21,7 @@ Install `docker-compose` [1.25.0-rc3](https://github.com/docker/compose/releases
 
 ## Usage
 
-Run
+Run (ubuntu)
 
 ```
 sudo DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose up --build

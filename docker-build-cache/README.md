@@ -19,7 +19,7 @@ Experimental:     true
 
 ## Usage
 
-Run
+Run (ubuntu)
 
 ```
 sudo DOCKER_BUILDKIT=1 docker build . --progress plain
