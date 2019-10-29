@@ -26,7 +26,3 @@ sudo DOCKER_BUILDKIT=1 docker build . --progress plain
 ```
 
 Modify `Gemfile` (e.g. remove a gem) and run the command again. Notice that the previously downloaded gem is loaded from cache and is not re-installed.
-
-```
-sudo DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose up --build
-```
