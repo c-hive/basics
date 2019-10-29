@@ -1,0 +1,8 @@
+# syntax=docker/dockerfile:experimental
+
+version: '3.7'
+services:
+  web:
+    build:
+      context: .
+    command: 'echo "hi"'
