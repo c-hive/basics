@@ -2,6 +2,8 @@
 
 Caching dependencies during build steps using the [experimental `buildkit` feature](https://github.com/moby/moby/issues/14080) of Docker and [CLI build](https://github.com/docker/compose/pull/6865) support of `docker-compose`. This examples uses NPM, JavaScript's package manager.
 
+*NOTE: the final image will not contain the cached dependencies!*
+
 ## Prerequisites
 
 Follow this guide to enable experimental features and buildkit on Docker server: https://github.com/moby/buildkit/blob/4f4e03067523b2fc5ca2f17514a5e75ad63e02fb/frontend/dockerfile/docs/experimental.md
