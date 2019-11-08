@@ -15,4 +15,4 @@ Each project
 - [`docker-compose` build cache](docker-compose-build-cache)
 - [Inline RSpec](inline-rspec)
 - [Inline ActiveRecord](inline-activerecord)
-- [GitHub Action with NPM cache](github-action-npm-cache)
+- [GitHub Actions Workflow with NPM cache](github-workflow-npm-cache)

@@ -1,4 +1,4 @@
-# GitHub Action with NPM cache
+# GitHub Actions Workflow with NPM cache
 
 ### Usage:
 

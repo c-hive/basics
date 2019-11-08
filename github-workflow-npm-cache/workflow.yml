@@ -1,4 +1,4 @@
-name: GitHub Action with NPM cache
+name: GitHub Actions Workflow with NPM cache
 
 on: [push]
 
@@ -16,9 +16,9 @@ jobs:
     - name: Cache NPM dependencies
       uses: actions/cache@v1
       with:
-        path: github-action-npm-cache/node_modules
-        key: ${{ runner.OS }}-github-action-npm-cache-${{ hashFiles('**/github-action-npm-cache/package-lock.json') }}
+        path: github-workflow-npm-cache/node_modules
+        key: ${{ runner.OS }}-github-workflow-npm-cache-${{ hashFiles('**/github-workflow-npm-cache/package-lock.json') }}
         restore-keys: |
-          ${{ runner.OS }}-github-action-npm-cache-
+          ${{ runner.OS }}-github-workflow-npm-cache-
     - name: Install NPM dependencies
-      run: cd github-action-npm-cache && npm install
+      run: cd github-workflow-npm-cache && npm install

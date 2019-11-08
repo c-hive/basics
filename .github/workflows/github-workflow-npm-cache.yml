@@ -1,0 +1,24 @@
+name: GitHub Actions Workflow with NPM cache
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 8
+      uses: actions/setup-node@v1
+      with:
+        node-version: 8.x
+    - name: Cache NPM dependencies
+      uses: actions/cache@v1
+      with:
+        path: github-workflow-npm-cache/node_modules
+        key: ${{ runner.OS }}-github-workflow-npm-cache-${{ hashFiles('**/github-workflow-npm-cache/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-github-workflow-npm-cache-
+    - name: Install NPM dependencies
+      run: cd github-workflow-npm-cache && npm install
