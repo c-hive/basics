@@ -2,4 +2,4 @@
 
 ### Usage:
 
-[Test workflow](../.github/workflows/github-action-npm-cache.yml)
+[Test workflow](../.github/workflows/github-workflow-npm-cache.yml)
