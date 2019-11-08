@@ -27,7 +27,7 @@ jobs:
     - name: Cache NPM dependencies
       uses: actions/cache@v1
       with:
-        path: node_modules
-        key: ${{ runner.OS }}-npm-${{ hashFiles('./github-action-npm-cache/package-lock.json') }}
+        path: github-action-npm-cache/node_modules
+        key: ${{ runner.OS }}-npm-${{ hashFiles('**/github-action-npm-cache/package-lock.json') }}
     - name: Install NPM dependencies
-      run: yarn install
+      run: cd github-action-npm-cache && yarn install
