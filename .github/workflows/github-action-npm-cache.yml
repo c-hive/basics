@@ -1,0 +1,9 @@
+name: GitHub Action with NPM cache
+
+on: [push]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ./github-action-npm-cache
