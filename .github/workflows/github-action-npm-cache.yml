@@ -6,4 +6,5 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - uses: ./github-action-npm-cache
