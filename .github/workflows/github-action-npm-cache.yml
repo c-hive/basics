@@ -28,6 +28,6 @@ jobs:
       uses: actions/cache@v1
       with:
         path: node_modules
-        key: ${{ runner.OS }}-npm-${{ hashFiles('**/github-action-npm-cache/package-lock.json') }}
+        key: ${{ runner.OS }}-npm-${{ hashFiles('./github-action-npm-cache/package-lock.json') }}
     - name: Install NPM dependencies
       run: yarn install
