@@ -4,6 +4,8 @@ Minimal inline ActiveRecord example. Useful for showcasing / testing ActiveRecor
 
 ### Usage:
 
+[Test workflow](../.github/workflows/inline-activerecord.yml)
+
 ```sh
 ruby inline-activerecord.rb
 ```
