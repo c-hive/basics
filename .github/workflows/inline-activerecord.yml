@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Install dependencies
-      run: apt-get install libsqlite3-dev
+      run: sudo apt-get install libsqlite3-dev
     - uses: actions/checkout@v1
     - name: Set up Ruby 2.6
       uses: actions/setup-ruby@v1
