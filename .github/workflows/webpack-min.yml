@@ -27,4 +27,4 @@ jobs:
         cd webpack-min
         node index.js
         npx webpack
-        node dist/main.js
+        node dist/main.js | grep -q 'Not Hello World'
