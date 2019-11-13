@@ -27,4 +27,4 @@ jobs:
         cd webpack-env-vars
         npx cross-env TEST='Hello World' node index.js
         npx cross-env TEST='Hello World' webpack
-        node dist/main.js | grep -q 'Hello World'
+        node dist/main.js | grep 'Hello World'
