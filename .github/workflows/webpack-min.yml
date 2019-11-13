@@ -1,0 +1,30 @@
+name: Minimal webpack config
+
+on: [push]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 8
+      uses: actions/setup-node@v1
+      with:
+        node-version: 8.x
+    - name: Cache NPM dependencies
+      uses: actions/cache@v1
+      with:
+        path: webpack-min/node_modules
+        key: ${{ runner.OS }}-webpack-min-${{ hashFiles('**/webpack-min/yarn-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-webpack-min-
+    - name: Install dependencies
+      run: |
+        cd webpack-min
+        yarn install
+    - name: Run
+      run: |
+        cd webpack-min
+        node index.js
+        npx webpack
+        node dist/main.js

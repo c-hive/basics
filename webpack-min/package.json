@@ -1,0 +1,11 @@
+{
+  "name": "webpack-min",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "c-hive",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

@@ -16,3 +16,5 @@ Each project
 - [Inline RSpec](inline-rspec)
 - [Inline ActiveRecord](inline-activerecord)
 - [GitHub Actions Workflow with NPM cache](github-workflow-npm-cache)
+- [Minimal webpack config](webpack-min/webpack-min.md)
+- [Webpack env vars](webpack-env-vars/webpack-env-vars.md)

@@ -1,0 +1,30 @@
+name: Webpack env vars
+
+on: [push]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 8
+      uses: actions/setup-node@v1
+      with:
+        node-version: 8.x
+    - name: Cache NPM dependencies
+      uses: actions/cache@v1
+      with:
+        path: webpack-env-vars/node_modules
+        key: ${{ runner.OS }}-webpack-env-vars-${{ hashFiles('**/webpack-env-vars/yarn-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-webpack-env-vars-
+    - name: Install dependencies
+      run: |
+        cd webpack-env-vars
+        yarn install
+    - name: Run
+      run: |
+        cd webpack-env-vars
+        npx cross-env TEST='Hello World' node index.js
+        npx cross-env TEST='Hello World' webpack
+        node dist/main.js
