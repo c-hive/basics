@@ -21,5 +21,5 @@ Each project
 - [Inline ActiveRecord](inline-activerecord)
 
 ### JS
-- [Minimal webpack config](webpack-min/webpack-min.md)
-- [Webpack env vars](webpack-env-vars/webpack-env-vars.md)
+- [Minimal webpack config](webpack-min)
+- [Webpack env vars](webpack-env-vars)
