@@ -15,7 +15,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: webpack-env-vars/node_modules
-        key: ${{ runner.OS }}-webpack-env-vars-${{ hashFiles('**/webpack-env-vars/yarn-lock.json') }}
+        key: ${{ runner.OS }}-webpack-env-vars-${{ hashFiles('**/webpack-env-vars/yarn.lock') }}
         restore-keys: |
           ${{ runner.OS }}-webpack-env-vars-
     - name: Install dependencies

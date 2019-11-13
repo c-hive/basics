@@ -15,7 +15,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: webpack-min/node_modules
-        key: ${{ runner.OS }}-webpack-min-${{ hashFiles('**/webpack-min/yarn-lock.json') }}
+        key: ${{ runner.OS }}-webpack-min-${{ hashFiles('**/webpack-min/yarn.lock') }}
         restore-keys: |
           ${{ runner.OS }}-webpack-min-
     - name: Install dependencies
