@@ -13,18 +13,12 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Print debug info
-      run: echo $BUNDLE_PATH
-    - name: Print debug info
-      run: echo $GEM_HOME
-    - name: Print debug info
-      run: echo $GEM_PATH
     - name: Cache dependencies
       uses: actions/cache@v1
       with:
-        path: /usr/local/bundle
+        path: inline-rails/vendor/bundle
         key: ${{ runner.OS }}-inline-rails-${{ hashFiles('**/inline-rails/inline-rails.rb') }}
         restore-keys: |
           ${{ runner.OS }}-inline-rails-
     - name: Execute
-      run: ruby inline-rails/inline-rails.rb
+      run: BUNDLE_PATH=inline-rails/vendor/bundle ruby inline-rails/inline-rails.rb
