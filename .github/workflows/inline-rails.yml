@@ -13,5 +13,12 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: /usr/local/bundle
+        key: ${{ runner.OS }}-inline-rails-${{ hashFiles('**/inline-rails/inline-rails.rb') }}
+        restore-keys: |
+          ${{ runner.OS }}-inline-rails-
     - name: Execute
       run: ruby inline-rails/inline-rails.rb
