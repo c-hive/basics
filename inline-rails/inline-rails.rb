@@ -29,4 +29,4 @@ end
 
 App.initialize!
 
-Rack::Server.new(app: App, Port: 3000).start
+Rack::Server.new(app: App, Port: 3000, daemonize: true).start
