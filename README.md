@@ -19,6 +19,7 @@ Each project
 ### Ruby
 - [Inline RSpec](inline-rspec)
 - [Inline ActiveRecord](inline-activerecord)
+- [Inline Rails](inline-rails)
 
 ### JS
 - [Minimal webpack config](webpack-min)
