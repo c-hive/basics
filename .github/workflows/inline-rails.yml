@@ -13,6 +13,10 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
+    - name: Print debug info
+      run: echo $BUNDLE_PATH
+    - name: Print debug info
+      run: echo $GEM_HOME
     - name: Cache dependencies
       uses: actions/cache@v1
       with:
