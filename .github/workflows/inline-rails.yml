@@ -17,6 +17,8 @@ jobs:
       run: echo $BUNDLE_PATH
     - name: Print debug info
       run: echo $GEM_HOME
+    - name: Print debug info
+      run: echo $GEM_PATH
     - name: Cache dependencies
       uses: actions/cache@v1
       with:
