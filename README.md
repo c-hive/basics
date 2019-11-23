@@ -24,3 +24,6 @@ Each project
 ### JS
 - [Minimal webpack config](webpack-min)
 - [Webpack env vars](webpack-env-vars)
+
+### Dart
+- [GitHub Actions Workflow with Flutter installation cache](flutter-install-cache)
