@@ -23,7 +23,9 @@ jobs:
           cd flutter-basics
           flutter pub get
       - name: Lint
-        run: flutter format --dry-run . --set-exit-if-changed
+        run: |
+          cd flutter-basics
+          flutter format --dry-run . --set-exit-if-changed
 
   lint:
     runs-on: ubuntu-latest
@@ -41,7 +43,9 @@ jobs:
           cd flutter-basics
           flutter pub get
       - name: Lint
-        run: flutter analyze
+        run: |
+          cd flutter-basics
+          flutter analyze
 
   test:
     runs-on: ubuntu-latest
@@ -60,7 +64,6 @@ jobs:
           flutter pub get
       - name: Test
         run: |
-          pwd
           cd flutter-basics
           flutter test
 
@@ -81,4 +84,6 @@ jobs:
           cd flutter-basics
           flutter pub get
       - name: Build
-        run: flutter build apk
+        run: |
+          cd flutter-basics
+          flutter build apk
