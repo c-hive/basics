@@ -27,3 +27,4 @@ Each project
 
 ### Dart
 - [GitHub Actions Workflow with Flutter installation cache](flutter-install-cache)
+- [Flutter basics: screens, routing, tests, data input, CI](flutter-basics)
