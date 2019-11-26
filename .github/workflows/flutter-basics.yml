@@ -59,7 +59,10 @@ jobs:
           cd flutter-basics
           flutter pub get
       - name: Test
-        run: flutter test
+        run: |
+          pwd
+          cd flutter-basics
+          flutter test
 
   build:
     runs-on: ubuntu-latest
