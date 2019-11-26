@@ -54,10 +54,10 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: ${{ env.flutter_version }}
-      - name: |
+      - name: Install dependencies
+        run: |
           cd flutter-basics
-          Install dependencies
-        run: flutter pub get
+          flutter pub get
       - name: Test
         run: flutter test
 
