@@ -1,0 +1,26 @@
+name: Minimal React
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 8
+      uses: actions/setup-node@v1
+      with:
+        node-version: 8.x
+    - name: Cache NPM dependencies
+      uses: actions/cache@v1
+      with:
+        path: minimal-react/node_modules
+        key: ${{ runner.OS }}-minimal-react-${{ hashFiles('**/minimal-react/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.OS }}-minimal-react-
+    - name: Install NPM dependencies
+      run: cd minimal-react && yarn install
+    - name: Build
+      run: cd minimal-react && yarn build
