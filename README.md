@@ -27,5 +27,6 @@ Each project
 - [Minimal React](minimal-react)
 
 ### Dart
-- [GitHub Actions Workflow with Flutter installation cache](flutter-install-cache)
+- [Language features](dart-lang)
 - [Flutter basics: screens, routing, tests, data input, CI](flutter-basics)
+- [GitHub Actions Workflow with Flutter installation cache](flutter-install-cache)
