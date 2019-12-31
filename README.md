@@ -24,7 +24,10 @@ Each project
 ### JS
 - [Minimal webpack config](webpack-min)
 - [Webpack env vars](webpack-env-vars)
+
+### React
 - [Minimal React](minimal-react)
+- [Memoization in hooks and contexts](react-hook-context-memo)
 
 ### Dart
 - [Language features](dart-lang)
