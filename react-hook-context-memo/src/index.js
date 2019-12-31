@@ -60,7 +60,6 @@ const ObjectStateCounter = () => {
   renders.current += 1;
 
   React.useEffect(() => {
-    // Normally you'd do something with `counter` and `setCounter` here
     runs.current += 1;
   }, [counter, setCounter]);
 
@@ -174,7 +173,6 @@ const DoubleMemoizedContextProvider = ({ children }) => {
     </DoubleMemoizedContext.Provider>
   );
 };
-// This memo does nothing
 const DoubleMemoizedContextCounter = React.memo(() => {
   const [counter, setCounter, runs] = React.useContext(DoubleMemoizedContext);
   const renders = React.useRef(0);

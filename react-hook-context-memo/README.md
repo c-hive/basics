@@ -1,5 +1,7 @@
 # Memoization in hooks and contexts
 
+This project showcases `useState`, `useEffect`, `useContext`, `useMemo`, `memo`. How and when they can be used and whar are their effects.
+
 ### Usage:
 
 https://codesandbox.io/s/github/c-hive/basics/tree/master/react-hook-context-memo
