@@ -1,12 +1,12 @@
 # Memoization in hooks and contexts
 
-This project showcases `useState`, `useEffect`, `useContext`, `useMemo`, `memo`. How and when they can be used and whar are their effects.
-
 ### Usage:
 
 https://codesandbox.io/s/github/c-hive/basics/tree/master/react-hook-context-memo
 
-### Notable effects:
+This project showcases `useState`, `useEffect`, `useContext`, `useMemo`, `memo`. How and when they can be used and what are their effects.
+
+Most notably:
 
 - Setters and Objects from `useState` have static references, as a re-render triggered by the parent re-renders the children but doesn't cause their `useEffect` to re-run.
 - Objects in the dependency array are shallow compared. They will cause `useEffect` to re-run when their reference changes. This can be avoided by something like [`use-deep-compare-effect`](https://github.com/kentcdodds/use-deep-compare-effect).
