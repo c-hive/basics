@@ -182,7 +182,7 @@ const DoubleMemoizedContextCounter = React.memo(() => {
 
   return (
     <>
-      <h3>DoubleMemoizedContextCounter context counter</h3>
+      <h3>Double Memoized context counter</h3>
       <p>Counter: {counter}</p>
       <p>Provider runs: {runs}</p>
       <p>Renders: {renders.current}</p>
