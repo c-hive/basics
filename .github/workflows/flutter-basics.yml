@@ -3,7 +3,7 @@ name: Flutter basics
 on: [push]
 
 env:
-  flutter_version: "1.9.1+hotfix.6"
+  flutter_version: "1.12.13+hotfix.5"
   java_version: "12.x"
 
 jobs:
@@ -15,6 +15,11 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: ${{ env.java_version }}
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ env.flutter_version }}
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: ${{ env.flutter_version }}
@@ -35,6 +40,11 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: ${{ env.java_version }}
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ env.flutter_version }}
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: ${{ env.flutter_version }}
@@ -55,6 +65,11 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: ${{ env.java_version }}
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ env.flutter_version }}
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: ${{ env.flutter_version }}
@@ -76,6 +91,11 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: ${{ env.java_version }}
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ env.flutter_version }}
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: ${{ env.flutter_version }}
