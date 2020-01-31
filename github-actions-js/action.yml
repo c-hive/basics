@@ -1,4 +1,4 @@
-name: 'GitHub Actions Docker example'
+name: 'GitHub Actions native example'
 runs:
   using: 'node12'
   main: 'index.js'
