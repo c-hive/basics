@@ -1,0 +1,28 @@
+name: Run nested promises parallelly
+
+on: [push]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 8
+      uses: actions/setup-node@v1
+      with:
+        node-version: 8.x
+    - name: Cache NPM dependencies
+      uses: actions/cache@v1
+      with:
+        path: webpack-env-vars/node_modules
+        key: ${{ runner.OS }}-webpack-env-vars-${{ hashFiles('**/webpack-env-vars/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.OS }}-webpack-env-vars-
+    - name: Install dependencies
+      run: |
+        cd javascript-run-nested-promises-parallelly
+        yarn install
+    - name: Run
+      run: |
+        cd javascript-run-nested-promises-parallelly
+        node javascript-run-nested-promises-parallelly.js
