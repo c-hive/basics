@@ -23,6 +23,7 @@ Each project
 
 ### JS
 - [Minimal webpack config](webpack-min)
+- [Run nested promises parallely](javascript-run-nested-promises-parallelly)
 - [Webpack env vars](webpack-env-vars)
 
 ### React
