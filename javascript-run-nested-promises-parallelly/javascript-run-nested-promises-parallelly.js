@@ -8,7 +8,7 @@ for (let i = 0; i < 5; i++) {
     promises.push(delayedPromise(2000, 7000).then(outerPromiseId => {
         console.log(`Resolved ${outerPromiseId} outer promise. Index: ${i}`);
 
-        return new Array(3).fill().map(() => delayedPromise(1000, 2000).then(id => {
+        return new Array(3).fill().map(() => delayedPromise(0, 1000).then(id => {
             console.log(`Resolved ${id} inner promise for ${outerPromiseId} outer promise.`)
 
             return id;
@@ -24,9 +24,9 @@ function run() {
 }
 
 (async () => {
-    console.time("run()");
+    console.time("run");
 
     await run();
 
-    console.timeEnd("run()");
+    console.timeEnd("run");
 })();
