@@ -1,4 +1,4 @@
-name: Run nested promises parallelly
+name: Run nested promises in parallel
 
 on: [push]
 
@@ -20,9 +20,9 @@ jobs:
           ${{ runner.OS }}-webpack-env-vars-
     - name: Install dependencies
       run: |
-        cd javascript-run-nested-promises-parallelly
+        cd javascript-run-nested-promises-in-parallel
         yarn install
     - name: Run
       run: |
-        cd javascript-run-nested-promises-parallelly
-        node javascript-run-nested-promises-parallelly.js
+        cd javascript-run-nested-promises-in-parallel
+        node javascript-run-nested-promises-in-parallel.js
