@@ -17,7 +17,7 @@ Resolved _hkzk20qne child promise for _cdyd982l1 parent promise.
 Resolved _ybawj08wg child promise for _as7paisw8 parent promise.
 ```
 
-Once any of the parent promises has resolved, its child promises are initiated to be [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other promises.
+Once any of the parent promises has resolved, its child promises are initiated to [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other promises.
 
 ## Usage
 
