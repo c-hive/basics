@@ -1,16 +1,8 @@
 # Run nested promises in parallel
 
-The goal is to achieve maximum parallelism. In other words, once any of the parent promises has been resolved, its child promises are initiated right away to [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other parent promises. Refer to the [Example](#example) chapter for a corroboration of this behaviour.
+The goal is to achieve maximum parallelism. In other words, once any of the parent promises has been resolved, its child promises are initiated right away to [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other parent promises.
 
-## Usage
-
-[Test workflow](../.github/workflows/javascript-run-nested-promises-in-parallel.yml)
-
-```sh
-node javascript-run-nested-promises-in-parallel.js
-```
-
-## Example
+Inspect the logs as a corroboration for this behaviour:
 
 ```sh
 Resolved _x328vvpid parent promise. Index: 2
@@ -25,4 +17,12 @@ Resolved _pfgewzg4o child promise for _as7paisw8 parent promise.
 Resolved _sdtwiionj child promise for _cdyd982l1 parent promise.
 Resolved _hkzk20qne child promise for _cdyd982l1 parent promise.
 Resolved _ybawj08wg child promise for _as7paisw8 parent promise.
+```
+
+## Usage
+
+[Test workflow](../.github/workflows/javascript-run-nested-promises-in-parallel.yml)
+
+```sh
+node javascript-run-nested-promises-in-parallel.js
 ```
