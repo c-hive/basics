@@ -2,7 +2,9 @@
 
 The goal is to achieve maximum parallelism. In other words, once any of the parent promises has been resolved, its child promises are initiated right away to [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other parent promises.
 
-The logs corroborate this behaviour:
+## Example
+
+The logs clearly corroborate this behaviour.
 
 ```sh
 Resolved _x328vvpid parent promise. Index: 2
