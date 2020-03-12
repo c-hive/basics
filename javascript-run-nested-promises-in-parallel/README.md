@@ -1,6 +1,8 @@
 # Run nested promises in parallel
 
-The goal is to achieve maximum parallelism. The logs corroborate this behaviour:
+The goal is to achieve maximum parallelism. In other words, once any of the parent promises has been resolved, its child promises are initiated right away to [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other parent promises.
+
+The logs corroborate this behaviour:
 
 ```sh
 Resolved _x328vvpid parent promise. Index: 2
@@ -16,8 +18,6 @@ Resolved _sdtwiionj child promise for _cdyd982l1 parent promise.
 Resolved _hkzk20qne child promise for _cdyd982l1 parent promise.
 Resolved _ybawj08wg child promise for _as7paisw8 parent promise.
 ```
-
-Once any of the parent promises has resolved, its child promises are initiated to [start their task](https://stackoverflow.com/a/30823708/9599137) regardless of the state of the other promises.
 
 ## Usage
 
