@@ -19,10 +19,4 @@ function run() {
     );
 }
 
-(async () => {
-    console.time("run");
-
-    await run();
-
-    console.timeEnd("run");
-})();
+run();
