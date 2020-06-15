@@ -1,8 +1,6 @@
 # Docker build cache
 
-Caching dependencies during build steps using the [experimental `buildkit` feature](https://github.com/moby/moby/issues/14080) of Docker. This examples uses Bundler, Ruby's package manager.
-
-*NOTE: the final image will not contain the cached dependencies!*
+Caching dependencies during build steps using the [experimental `buildkit` feature](https://github.com/moby/moby/issues/14080) of Docker. This example uses NPM, JavaScript's package manager. It caches the `/root/.npm` folder which is in turn not included the final image. Note that providing the path `~/.npm` doesn't work.
 
 ## Prerequisites
 
@@ -24,7 +22,7 @@ Experimental:     true
 Run (ubuntu)
 
 ```
-sudo DOCKER_BUILDKIT=1 docker build . --progress plain
+DOCKER_BUILDKIT=1 docker build . --progress plain --no-cache
 ```
 
-Modify `Gemfile` (e.g. remove a gem) and run the command again. Notice that the previously downloaded gem is loaded from cache and is not re-installed.
+Modify `package.json` (e.g. remove a dependency) and run the command again. Notice that the previously downloaded dependency is loaded from cache and is not re-installed.

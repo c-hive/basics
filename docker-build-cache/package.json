@@ -1,0 +1,32 @@
+{
+  "name": "docker-build-cache",
+  "version": "1.0.0",
+  "scripts": {
+    "check-cache": "npm-check-cache"
+  },
+  "dependencies": {
+    "elly": "^1.1.10",
+    "mocha": "^6.1.2",
+    "svgson": "^3.1.0",
+    "@material-ui/core": "^4.8.3",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.39",
+    "async-mutex": "^0.1.3",
+    "bottleneck": "^2.19.2",
+    "electron-store": "^4.0.0",
+    "electron-unhandled": "^3.0.0",
+    "electron-updater": "^4.0.14",
+    "firebase": "^6.2.4",
+    "js-yaml": "^3.13.1",
+    "material-table": "1.53.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-firebaseui": "^3.1.2",
+    "react-markdown": "^4.2.2",
+    "react-router-dom": "^5.0.1",
+    "remark-breaks": "^1.0.3",
+    "ws": "^7.1.0"
+  }
+}

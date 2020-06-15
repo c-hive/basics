@@ -1,7 +1,17 @@
 # syntax=docker/dockerfile:experimental
 
-FROM ruby:2.6.3
+FROM node:8
 
-COPY Gemfile ./
+COPY package.json ./
+COPY package-lock.json ./
 
-RUN --mount=type=cache,target=/usr/local/bundle bundle check || bundle install
+RUN echo 'Install without cache'
+RUN npm install
+RUN rm -rf ./node_modules
+RUN rm -rf ~/.npm
+
+RUN echo 'Install with ~.npm cache'
+RUN --mount=type=cache,target=/root/.npm npm install
+
+RUN echo 'Install with node_modules cache'
+RUN --mount=type=cache,target=/root/.npm npm install
