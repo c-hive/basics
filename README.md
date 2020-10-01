@@ -15,6 +15,7 @@ Each project
 ### Docker
 - [Docker build cache](docker-build-cache)
 - [`docker-compose` build cache](docker-compose-build-cache)
+- [Docker multistage cache](docker-multistage-cache)
 
 ### Ruby
 - [Inline RSpec](inline-rspec)

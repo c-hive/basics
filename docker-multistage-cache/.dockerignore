@@ -1,0 +1,7 @@
+venv
+db.sqlite3
+
+*.egg-info
+*.egg/
+**/__pycache__
+**/*.pyc
