@@ -17,5 +17,5 @@ This is an example Django project to illustrate the usage of building intermedia
 - Build the final image use `--cache-from` listing the intermediate image. I.e:
 
   ```bash
-  docker build --cache-from django_example:dev -t django_example:final .
+  docker build --cache-from django_example:dep -t django_example:final .
   ```
