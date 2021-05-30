@@ -27,6 +27,6 @@
     "react-markdown": "^4.2.2",
     "react-router-dom": "^5.0.1",
     "remark-breaks": "^1.0.3",
-    "ws": "^7.1.0"
+    "ws": "^7.4.6"
   }
 }
