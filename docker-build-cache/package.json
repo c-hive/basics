@@ -20,7 +20,7 @@
     "js-yaml": "^3.13.1",
     "material-table": "1.53.0",
     "moment": "^2.24.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-firebaseui": "^3.1.2",
